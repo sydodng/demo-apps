@@ -1,0 +1,30 @@
+*** Start Node server:
+- run command below:
+  1.  >node server.js
+  2. or >npm run server
+
+*** Start client app:
+ - cd to client folder and run below command:
+  >npm start
+
+*** Install Sequelize to working with PostgreSQL DB:
+>npm install -g sequelize-cli
+
+===========================================
+Database setup & configuration
+Ref link: https://scotch.io/tutorials/getting-started-with-node-express-and-postgres-using-sequelize
+===========================================
+*** Configure Sequelize for our project(file .sequelizerc in root folder)
+
+*** Install packages
+>npm install --save sequelize pg pg-hstore
+>sequelize init
+>createdb todos-dev [optional]
+
+*** Generating models;
+>sequelize model:create --name Category --attributes name:string
+
+
+
+*** Run migrate scripts:
+>sequelize db:migrate
